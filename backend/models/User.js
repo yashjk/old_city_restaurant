@@ -14,7 +14,7 @@ const UserSchema = new mongoose.Schema(
 		},
 		type: {
 			type: String,
-			enum: ["authenticated", "guest"], // Only allow two types of users
+			enum: ["authenticated", "guest", "admin"], // Only allow two types of users
 			required: true,
 			default: "guest",
 		},
@@ -27,11 +27,13 @@ const UserSchema = new mongoose.Schema(
 	{ timestamps: true }
 );
 
-// Hash the password before saving the user
 UserSchema.pre("save", async function (next) {
 	const user = this;
 
-	if (user.isModified("password") && user.type === "authenticated") {
+	if (
+		user.isModified("password") &&
+		(user.type === "authenticated" || user.type === "admin")
+	) {
 		const salt = await bcrypt.genSalt(10);
 		user.password = await bcrypt.hash(user.password, salt);
 	}
@@ -40,7 +42,7 @@ UserSchema.pre("save", async function (next) {
 
 // Method to compare hashed passwords (used only for "authenticated" users)
 UserSchema.methods.comparePassword = async function (enteredPassword) {
-	if (this.type === "guest") return false; // Guests don't have a password
+	if (this.type === "guest") return false;
 	return await bcrypt.compare(enteredPassword, this.password);
 };
 
