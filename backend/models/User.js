@@ -9,7 +9,7 @@ const UserSchema = new mongoose.Schema(
 		password: {
 			type: String,
 			required: function () {
-				return this.type === "authenticated";
+				return this.type === "authenticated" || this.type === "admin";
 			},
 		},
 		type: {
