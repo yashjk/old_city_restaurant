@@ -40,7 +40,6 @@ UserSchema.pre("save", async function (next) {
 	next();
 });
 
-// Method to compare hashed passwords (used only for "authenticated" users)
 UserSchema.methods.comparePassword = async function (enteredPassword) {
 	if (this.type === "guest") return false;
 	return await bcrypt.compare(enteredPassword, this.password);

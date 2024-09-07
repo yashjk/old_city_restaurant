@@ -26,7 +26,7 @@ const OrderSchema = new mongoose.Schema(
 			{
 				itemId: { type: mongoose.Schema.Types.ObjectId, ref: "MenuItem" },
 				quantity: { type: Number, required: true, min: 1 },
-				price: { type: Number, required: true, min: 0 }, // Store the price at the time of order
+				price: { type: Number, required: true, min: 0 },
 			},
 		],
 		review: {
