@@ -7,13 +7,7 @@ const ReservationSchema = new mongoose.Schema(
 			ref: "User",
 			required: true,
 		},
-		OrderId: {
-			type: mongoose.Schema.Types.ObjectId,
-			ref: "Order",
-			required: function () {
-				return this.type === "reservation";
-			},
-		},
+		orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "Order" }],
 		date: { type: Date, required: true },
 		time: { type: String, required: true },
 		partySize: { type: Number, required: true, min: 1, max: 20 },
