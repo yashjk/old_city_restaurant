@@ -6,6 +6,7 @@ const ReviewSchema = new mongoose.Schema(
 			type: mongoose.Schema.Types.ObjectId,
 			ref: "User",
 			required: true,
+			index: true,
 		},
 		OrderId: {
 			type: mongoose.Schema.Types.ObjectId,

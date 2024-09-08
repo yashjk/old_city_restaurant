@@ -4,6 +4,7 @@ const OrderSchema = new mongoose.Schema(
 			type: mongoose.Schema.Types.ObjectId,
 			ref: "User",
 			required: true,
+			index: true,
 		},
 		type: {
 			type: String,
@@ -21,6 +22,7 @@ const OrderSchema = new mongoose.Schema(
 			required: function () {
 				return this.type === "reservation";
 			},
+			index: true,
 		},
 		menuItems: [
 			{
@@ -36,5 +38,13 @@ const OrderSchema = new mongoose.Schema(
 	},
 	{ timestamps: true }
 );
+
+OrderSchema.methods.calculateTotalAmount = function () {
+	const totalAmount = this.menuItems.reduce(
+		(acc, item) => acc + item.price * item.quantity,
+		0
+	);
+	return totalAmount;
+};
 
 module.exports = mongoose.model("Order", OrderSchema);

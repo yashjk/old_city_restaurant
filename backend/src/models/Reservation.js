@@ -6,6 +6,7 @@ const ReservationSchema = new mongoose.Schema(
 			type: mongoose.Schema.Types.ObjectId,
 			ref: "User",
 			required: true,
+			index: true,
 		},
 		orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "Order" }],
 		date: { type: Date, required: true },
