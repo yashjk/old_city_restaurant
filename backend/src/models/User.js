@@ -5,7 +5,7 @@ const UserSchema = new mongoose.Schema(
 	{
 		firstName: { type: String, required: true },
 		lastName: { type: String, required: true },
-		email: { type: String, required: true, unique: true },
+		email: { type: String, required: true, unique: true, index: true },
 		password: {
 			type: String,
 			required: function () {
@@ -14,7 +14,7 @@ const UserSchema = new mongoose.Schema(
 		},
 		type: {
 			type: String,
-			enum: ["authenticated", "guest", "admin"], // Only allow two types of users
+			enum: ["authenticated", "guest", "admin"],
 			required: true,
 			default: "guest",
 		},

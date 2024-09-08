@@ -7,7 +7,7 @@ const MenuItemSchema = new mongoose.Schema(
 		pricePerPiece: { type: Number, required: true, min: 1 },
 		category: { type: String, required: true },
 		orderId: { type: mongoose.Schema.Types.ObjectId, ref: "Order" },
-		imageUrl: { type: String, required: true },
+		imageUrl: { type: String },
 		stock: { type: Number, required: true, min: 0 },
 	},
 	{ timestamps: true }
