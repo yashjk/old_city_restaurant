@@ -12,6 +12,16 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        serif: ["Georgia", "serif"],
+      },
+      height: {
+        "614px": "614px",
+        "600px": "565px",
+      },
+      width: {
+        "1180px": "1180px",
+      },
     },
   },
   plugins: [],
