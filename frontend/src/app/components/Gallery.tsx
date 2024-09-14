@@ -6,20 +6,23 @@ import food5 from "@/app/assets/food5.jpg";
 
 const Gallery = () => {
   return (
-    <div className="pt-10 pb-10 pl-32 pr-32">
-      <h1 className="text-black font-serif font-bold text-lg">Gallery</h1>
-      <div className="h-614px flex flex-row w-fit justify-center ml-auto mr-auto">
+    <div className="pt-10 pb-10 pl-4 pr-4 lg:pl-32 lg:pr-32">
+      <h1 className="text-black font-serif font-bold text-xl">Gallery</h1>
+      <div className="lg:h-614px h-487px flex flex-row w-fit justify-center ml-auto mr-auto pt-10">
         <div>
-          <div className="flex flex-row">
+          <div className="flex flex-col lg:flex-row">
             <img src={food1.src} className="w-72 mr-5 mb-5" />
             <img src={food2.src} className="w-96 mr-5 mb-5" />
           </div>
-          <div className="flex flex-row">
+          <div className="flex flex-col lg:flex-row">
             <img src={food5.src} className="w-96 mr-5 mb-5" />
             <img src={food4.src} className="w-72 mr-5 mb-5" />
           </div>
         </div>
-        <img src={food3.src} className="w-auto h-600px" />
+        <img
+          src={food3.src}
+          className="w-70 h-480px lg:h-600px lg:ml-4 lg:w-auto"
+        />
       </div>
     </div>
   );
