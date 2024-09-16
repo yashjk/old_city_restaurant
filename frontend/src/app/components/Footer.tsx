@@ -6,7 +6,7 @@ import yt from "@/app/assets/yt.png";
 
 const Footer = () => {
   return (
-    <div>
+    <div id="footer">
       <div className="bg-black text-white p-10 font-serif flex flex-col justify-between pt-10 pb-10 pr-4 pl-4 lg:pr-32 lg:pl-32 border-b-slate-200 border-b">
         <div className="text-left flex justify-between">
           <div>

@@ -2,7 +2,10 @@ import chef from "@/app/assets/about.jpg";
 
 const AboutUs = () => {
   return (
-    <div className="pt-10 lg:pl-32 lg:pr-32 pl-4 pr-4 flex flex-col lg:flex-row lg:flex pb-0">
+    <div
+      className="pt-10 lg:pl-32 lg:pr-32 pl-4 pr-4 flex flex-col lg:flex-row lg:flex pb-0"
+      id="about"
+    >
       <div className="lg:w-2/3">
         <h1 className="text-black font-serif font-bold text-3xl w-2/3 pb-5">
           A little about us

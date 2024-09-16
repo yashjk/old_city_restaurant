@@ -1,4 +1,4 @@
-import headerImg from "@/app/assets/friends.png";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -13,10 +13,18 @@ const Header = () => {
           </p>
         </div>
         <div className="font-serif hidden lg:flex flex-row space-x-8 h-fit items-center">
-          <p>Menu</p>
-          <p>About Us</p>
-          <p>Order online</p>
-          <p>Contact Us</p>
+          <Link href="#menu">
+            <p>Menu</p>
+          </Link>
+          <Link href="#about">
+            <p>About Us</p>
+          </Link>
+          <Link href="order">
+            <p>Order online</p>
+          </Link>
+          <Link href="#footer">
+            <p>Contact Us</p>
+          </Link>
         </div>
         <button className="font-serif bg-black text-white p-3 justify-center text-sm text-center">
           Reserve a table
