@@ -37,3 +37,12 @@
     ),
     url("assets/offers3.jpg") lightgray 50% / cover no-repeat;
 }
+
+.custom-background5 {
+  background: linear-gradient(
+      180deg,
+      color(display-p3 0 0 0 / 0) 0%,
+      color(display-p3 0 0 0 / 0.86) 100%
+    ),
+    url("assets/about.jpg") lightgray 50% / cover no-repeat;
+}
