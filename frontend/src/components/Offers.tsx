@@ -1,6 +1,9 @@
 const Offers = () => {
 	return (
-		<div className="pt-10 pb-10 lg:pl-32 lg:pr-32 pl-4 pr-4" id="menu">
+		<div
+			className="bg-[#F7F7F7] pt-10 pb-10 lg:pl-32 lg:pr-32 pl-4 pr-4"
+			id="menu"
+		>
 			<h1 className="text-black font-serif font-bold text-xl">Our offers</h1>
 			<p className="text-gray-400 font-serif text-xl">
 				Main services from our restaurant specially for you

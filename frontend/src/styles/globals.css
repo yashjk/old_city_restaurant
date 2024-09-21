@@ -3,46 +3,46 @@
 @tailwind utilities;
 
 .custom-background {
-  background: linear-gradient(
-      0deg,
-      rgba(49, 28, 0, 0.6) 0%,
-      rgba(49, 28, 0, 0.6) 100%
-    ),
-    url("assets/friends.png") lightgray 50% / cover no-repeat;
+	background: linear-gradient(
+			0deg,
+			rgba(49, 28, 0, 0.6) 0%,
+			rgba(49, 28, 0, 0.6) 100%
+		),
+		url("../assets/friends.png") lightgray 50% / cover no-repeat;
 }
 
 .custom-background2 {
-  background: linear-gradient(
-      180deg,
-      color(display-p3 0 0 0 / 0) 0%,
-      color(display-p3 0 0 0 / 0.86) 100%
-    ),
-    url("assets/offers1.jpg") lightgray 50% / cover no-repeat;
+	background: linear-gradient(
+			180deg,
+			color(display-p3 0 0 0 / 0) 0%,
+			color(display-p3 0 0 0 / 0.86) 100%
+		),
+		url("../assets/offers1.jpg") lightgray 50% / cover no-repeat;
 }
 
 .custom-background3 {
-  background: linear-gradient(
-      180deg,
-      color(display-p3 0 0 0 / 0) 0%,
-      color(display-p3 0 0 0 / 0.86) 100%
-    ),
-    url("assets/offers2.jpg") lightgray 50% / cover no-repeat;
+	background: linear-gradient(
+			180deg,
+			color(display-p3 0 0 0 / 0) 0%,
+			color(display-p3 0 0 0 / 0.86) 100%
+		),
+		url("../assets/offers2.jpg") lightgray 50% / cover no-repeat;
 }
 
 .custom-background4 {
-  background: linear-gradient(
-      180deg,
-      color(display-p3 0 0 0 / 0) 0%,
-      color(display-p3 0 0 0 / 0.86) 100%
-    ),
-    url("assets/offers3.jpg") lightgray 50% / cover no-repeat;
+	background: linear-gradient(
+			180deg,
+			color(display-p3 0 0 0 / 0) 0%,
+			color(display-p3 0 0 0 / 0.86) 100%
+		),
+		url("../assets/offers3.jpg") lightgray 50% / cover no-repeat;
 }
 
 .custom-background5 {
-  background: linear-gradient(
-      180deg,
-      color(display-p3 0 0 0 / 0) 0%,
-      color(display-p3 0 0 0 / 0.86) 100%
-    ),
-    url("assets/about.jpg") lightgray 50% / cover no-repeat;
+	background: linear-gradient(
+			180deg,
+			color(display-p3 0 0 0 / 0) 0%,
+			color(display-p3 0 0 0 / 0.86) 100%
+		),
+		url("../assets/about.jpg") lightgray 50% / cover no-repeat;
 }
