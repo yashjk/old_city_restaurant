@@ -36,7 +36,7 @@ const Footer = () => {
 				</div>
 			</div>
 			<p className="font-serif text-gray-300 p-3 bg-gray-900 text-center">
-				Les Soliel 1893 - All rights reserved
+				Old City Restaurant - All rights reserved
 			</p>
 		</div>
 	);

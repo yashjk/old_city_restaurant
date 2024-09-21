@@ -5,13 +5,13 @@ import Header from "../components/Header";
 import Offers from "../components/Offers";
 
 export default function Home() {
-  return (
-    <>
-      <Header />
-      <Gallery />
-      <Offers />
-      <AboutUs />
-      <Footer />
-    </>
-  );
+	return (
+		<>
+			<Header />
+			<Gallery />
+			<Offers />
+			<AboutUs />
+			<Footer />
+		</>
+	);
 }
